@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/javascript" src="scripts/showPic.js"></style>
+	<style type="text/css">
+	<style>
+   div.gallery {
+         margin: 5px;
+         border: 1px solid #ccc;
+         float: left;
+         width: 180px;
+      }
+
+	div.gallery:hover {
+  			border: 1px solid #777;
+		}
+
+	div.gallery img {
+  			width: 100%;
+  			height: auto;
+		}
+
+	div.desc {
+  			padding: 15px;
+  			text-align: center;
+		}
+	h1   {font-style: italic;
+			background-color: lightskyblue;}
+
+	 ul    {
+	 	    list-style-type: none;
+	 	    margin: 0;
+	 	    padding: 0;
+	 	    overflow: hidden;
+	 	    background-color: #333;
+	        }
+	  li    {
+	  	     float: left;
+	        }
+	li a, .dropbtn {
+			color: white;
+			display: inline-block;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		    }
+li a:hover, .dropdown:hover .dropbtn {
+	         background-color: red;
+	        }
+li.dropdown {
+	         display: inline-block;
+            } 
+.dropdown-contant  {
+      	    display: hidden;
+      	    position: relative;
+      	    background-color: #f9f9f9;
+      	    min-width: 160px;
+      	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      	    z-index: 1;
+             }
+ .dropdown-content a {
+      	     color: black;
+      	     padding: 12px 16px;
+      	     text-decoration: none;
+      	     display: block;
+      	     text-align: left;
+            }
+ .dropdown-content a:hover {
+ 	         background-color: #f1f1f1;
+ }
+ .dropdown:hover .dropdown-content {
+      	    display: block;
+      }
+  
+	</style>
+</head>
+<body>
+
+	<title>Photo gallery</title>
+	
+	<h1>Lee Photos</h1> 
+	<div class="gallery">
+  <a target="_blank" href="teamroper.NEF">
+    <img src="teamroper.NEF" alt="prescott" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Teamropertwo.NEF">
+    <img src="Teamropertwo.NEF" alt="prescott" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="Teamroperthree" href="Teamroperthree.NEF">
+    <img src="images/Teamroperthree.NEF" alt="prescott" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+   <ul>
+           <li><a href="#">Test</a></li>
+   	     <li><a href="#">Midterm</a></li>
+   	     <li><a href="#">Finals</a></li>
+   	     <li class="dropdown">
+   	     	<a href="#" class="dropbtn">Prescott Roping Event</a>
+   	      <div class="dropdown-content">
+   	      	<a href="images/teamroper.NEF" onclick="showPic(this);return false;" title="A teamroping display">Teamropers</a>
+   	      	<a href="images/teamropertwo.NEF" onclick="showPic(this);return false;" title="A teamroper2 display">Teamroper2</a>
+   	      	<a href="images/teamroperthree.NEF" onclick="showPic(this);return false;" title="A teamroper3 display">Teamroper3</a>
+   	      </div>
+   	     </li>
+   	
+            <li class="dropdown">
+   	     	<a href="#" class="dropbtn">Cody Jesus Bullriding</a>
+   	     <div class="dropdown-content">
+   	     	<a href="#">Assignment 1</a>
+   	     	<a href="#">Assignment 2</a>
+   	     	<a href="#">Assignment 3</a>
+   	     	<a href="#">Assignment 4</a>
+   	     </div>
+   	     </li>
+   </ul>
+   <img id="placeholder" src="images/placeholder.NEF" alt="web project photos sales.html" />
+   <p id="description">Choose an image.</p>
+</body>
+</html>
+
